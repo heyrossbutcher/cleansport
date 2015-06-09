@@ -1,0 +1,192 @@
+// _general.scss
+html, body{
+	font-size: 62.5%;
+	margin: 0;
+	padding: 0;
+}
+footer{
+	max-width: 920px;
+	width: 920px;
+	margin: 0 auto;
+	text-align: center;
+}
+nav{
+	max-width: 1100px;
+	width: 100%;	
+	height: 95px;
+	margin: 0 auto;
+	background: rgba(255,255,255,0.85);
+	position: fixed;
+	.logo{
+		float: left;
+		max-width: 50%;
+		width: 50%;
+		#logo_h{
+			// position: absolute;
+			max-width: 80%;
+			padding-top: 12px;
+			.svg_tl{
+				// display: none;	
+			}
+		}
+
+	}
+	.menu-main-nav-container{
+		float: right;
+		max-width: 50%;
+		width: 50%;
+		padding-top: 35px;
+		ul{
+			margin: 0;
+			padding: 0;
+			li{
+				float: left;
+				display: inline;
+				margin: 0;
+				padding: 0;
+				padding-right: 22px;
+				a{
+					font-family: $body-font;
+					font-size: 1.4rem;
+					font-weight: 300;
+					font-style: italic;
+					text-transform: uppercase;
+					color: $primary;
+					background: none;
+					padding: 0;
+					&:hover{
+						color: $secondary;
+						padding-bottom: 3px;
+						border-bottom: 1px solid $secondary;
+					}
+				}
+			}
+			li:last-child {
+				padding-right: 0;
+			}
+			li::after{
+				content: "//";
+				padding-left: 22px;
+				margin-top: -2px;
+				font-size: 1.7rem;
+				color: $primary;
+			}
+			li:last-child::after{
+				content: none;
+			}
+		}
+	}
+}
+.wrapper{
+	max-width: 1100px;
+	margin: 0 auto;
+	background-position: center center;
+	background-size: cover;
+}
+.innerWrapper{
+	max-width: 920px;
+	// width: 920px;
+	margin: 0 auto;
+}
+section{
+	max-width: 920px;
+	margin: 0 auto;
+}
+h1{
+	margin: 0;
+	padding: 0;
+}
+.hero{
+	height: 370px;
+	.tagline{
+		padding-top: 170px;
+		max-width: 50%;
+		width: 50%;
+		float: left;
+		p{
+			font-family: $body-font;
+			font-size: 1.8rem;
+			font-weight: 100;
+			font-style: italic;
+			text-transform: uppercase;
+			color: #fff;
+			padding: 10px 0;
+			margin: 5px;
+			background: $secondary;
+		}
+	}
+	.video{
+		padding-top: 140px;
+		max-width: 50%;
+		width: 50%;
+		float: left;
+	}
+}
+.intro{
+	background: #2ecc71;
+}
+.how{
+	background: #2c3e50;
+	.howItWorks{
+		float: left;
+		max-width: 50%;
+		width: 50%;
+		height: 400px;
+		background: pink;
+	}
+	.weAre{
+		float: left;
+		max-width: 50%;
+		width: 50%;
+		height: 400px;
+		background: red;
+	}
+}
+.about{
+	background: #f1c40f;
+	.prLogo{
+		float: left;
+		max-width: 50%;
+		width: 50%;
+		height: 200px;
+		background: #ccc;
+	}
+	.prCopy{
+		float: left;
+		max-width: 50%;
+		width: 50%;
+		height: 200px;
+		background: #333;
+	}
+}
+.partners{
+	background: #e74c3c;
+	ul{
+		margin: 0;
+		padding: 0;
+		li{
+			float: left;
+			width: 25%;
+			background: #444;
+			color: #fff;
+			border-right: 1px solid #000;
+		}
+	}
+}
+.contact{
+	background: #2ecc71;
+	.cred{
+		float: left;
+		max-width: 50%;
+		width: 50%;
+		height: 200px;
+		background: #000;
+	}
+	.form{
+		float: left;
+		max-width: 50%;
+		width: 50%;
+		height: 200px;
+		background: #333;
+	}
+}
