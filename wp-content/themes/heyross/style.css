@@ -504,8 +504,17 @@ footer ul li {
 
 html, body {
   font-size: 62.5%;
+  font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0; }
+
+h2 {
+  font-weight: 100;
+  font-size: 2.6rem;
+  letter-spacing: 7px;
+  text-transform: uppercase;
+  color: #259bcd;
+  margin-top: 0; }
 
 footer {
   max-width: 920px;
@@ -525,8 +534,8 @@ nav {
     max-width: 50%;
     width: 50%; }
     nav .logo #logo_h {
-      max-width: 80%;
-      padding-top: 12px; }
+      max-width: 70%;
+      padding-top: 15px; }
   nav .menu-main-nav-container {
     float: right;
     max-width: 50%;
@@ -590,78 +599,167 @@ h1 {
     max-width: 50%;
     width: 50%;
     float: left; }
-    .hero .tagline p {
-      font-family: 'Roboto', sans-serif;
-      font-size: 1.8rem;
-      font-weight: 100;
-      font-style: italic;
-      text-transform: uppercase;
-      color: #fff;
-      padding: 10px 0;
-      margin: 5px;
-      background: #004965; }
+    .hero .tagline .barOne, .hero .tagline .barTwo {
+      margin-bottom: 20px; }
+      .hero .tagline .barOne p, .hero .tagline .barTwo p {
+        font-size: 2rem;
+        font-weight: 100;
+        font-style: italic;
+        text-transform: uppercase;
+        color: #fff;
+        padding: 10px 0;
+        margin: 0px;
+        background: #004965;
+        display: inline; }
+    .hero .tagline .barOne p {
+      padding-left: 100px;
+      padding-right: 80px; }
+    .hero .tagline .barTwo p {
+      padding-left: 90px;
+      padding-right: 50px; }
   .hero .video {
     padding-top: 140px;
     max-width: 50%;
     width: 50%;
     float: left; }
+    .hero .video #vidFrame {
+      width: 460px; }
 
 .intro {
-  background: #2ecc71; }
+  font-size: 1.8rem;
+  font-weight: 300;
+  color: #889ea6;
+  margin: 80px auto; }
+  .intro p {
+    margin: 0; }
 
 .how {
-  background: #2c3e50; }
+  margin-bottom: 90px; }
   .how .howItWorks {
     float: left;
-    max-width: 50%;
-    width: 50%;
-    height: 400px;
-    background: pink; }
-  .how .weAre {
+    max-width: 60%;
+    width: 60%;
+    margin-right: 5%; }
+    .how .howItWorks ul {
+      margin: 0;
+      padding: 0; }
+      .how .howItWorks ul li {
+        list-style-type: none;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        padding: 25px 0; }
+        .how .howItWorks ul li .illustration {
+          max-width: 33%;
+          width: 33%;
+          margin-right: 10%;
+          float: left; }
+        .how .howItWorks ul li .description {
+          font-size: 14px;
+          font-weight: 300;
+          color: #889ea6;
+          max-width: 57%;
+          width: 57%;
+          float: left; }
+      .how .howItWorks ul li:first-child {
+        border-top: 1px solid rgba(0, 0, 0, 0.1); }
+  .how .we {
+    color: #fff;
     float: left;
-    max-width: 50%;
-    width: 50%;
-    height: 400px;
-    background: red; }
+    max-width: 35%;
+    width: 35%; }
+    .how .we h2 {
+      color: #fff;
+      margin: 0;
+      margin-bottom: 8px;
+      letter-spacing: 7.5px; }
+    .how .we p {
+      font-size: 1.3rem;
+      font-weight: 100;
+      letter-spacing: 0.6px;
+      margin: 0; }
+    .how .we .weAreIntro {
+      padding-bottom: 5px; }
+    .how .we .weAre {
+      padding-top: 20px;
+      background: #259bcd; }
+      .how .we .weAre h2, .how .we .weAre p {
+        padding: 0 20px; }
+      .how .we .weAre ul {
+        margin: 0;
+        padding: 0; }
+        .how .we .weAre ul li {
+          list-style-type: none;
+          padding: 10px 0; }
+          .how .we .weAre ul li .description {
+            float: left;
+            width: 70%;
+            text-transform: uppercase;
+            font-weight: 100; }
+            .how .we .weAre ul li .description p {
+              letter-spacing: 1px; }
+          .how .we .weAre ul li .illustration {
+            float: right;
+            width: 20%; }
+        .how .we .weAre ul li:nth-child(2n+1) {
+          background: #5cc1e5; }
+    .how .we .weAreNot {
+      padding: 20px;
+      background: #889ea6; }
+      .how .we .weAreNot .weAreNotList {
+        width: 90%;
+        float: left;
+        color: #fff; }
+      .how .we .weAreNot .not {
+        padding-top: 2px;
+        width: 7%;
+        float: right; }
+      .how .we .weAreNot ul {
+        margin: 0;
+        padding: 0; }
+        .how .we .weAreNot ul li {
+          list-style-type: none;
+          padding: 8px 0;
+          border-bottom: 1px solid #ccc; }
+        .how .we .weAreNot ul li:last-child {
+          border-bottom: none; }
+        .how .we .weAreNot ul li:first-child {
+          text-transform: uppercase; }
 
 .about {
-  background: #f1c40f; }
+  margin-bottom: 90px; }
   .about .prLogo {
     float: left;
-    max-width: 50%;
-    width: 50%;
-    height: 200px;
-    background: #ccc; }
+    max-width: 20%;
+    width: 20%; }
+    .about .prLogo img {
+      width: 100%;
+      height: auto;
+      margin-left: -12px; }
   .about .prCopy {
+    font-size: 1.5rem;
+    color: #889ea6;
+    font-weight: 300;
     float: left;
-    max-width: 50%;
-    width: 50%;
-    height: 200px;
-    background: #333; }
+    padding-top: 20px;
+    margin-left: 5%;
+    max-width: 75%;
+    width: 75%; }
 
 .partners {
-  background: #e74c3c; }
+  margin-bottom: 90px; }
   .partners ul {
     margin: 0;
     padding: 0; }
     .partners ul li {
       float: left;
-      width: 25%;
-      background: #444;
-      color: #fff;
-      border-right: 1px solid #000; }
+      width: 25%; }
 
 .contact {
-  background: #2ecc71; }
+  margin-bottom: 90px; }
   .contact .cred {
     float: left;
     max-width: 50%;
-    width: 50%;
-    height: 200px;
-    background: #000; }
+    width: 50%; }
   .contact .form {
     float: left;
     max-width: 50%;
-    width: 50%;
-    height: 200px;
-    background: #333; }
+    width: 50%; }

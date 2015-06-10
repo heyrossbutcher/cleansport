@@ -1,8 +1,17 @@
 // _general.scss
 html, body{
 	font-size: 62.5%;
+	font-family: $body-font;
 	margin: 0;
 	padding: 0;
+}
+h2{
+	font-weight: 100;
+	font-size: 2.6rem;
+	letter-spacing: 7px;
+	text-transform: uppercase;
+	color: $primary;
+	margin-top: 0;
 }
 footer{
 	max-width: 920px;
@@ -23,8 +32,8 @@ nav{
 		width: 50%;
 		#logo_h{
 			// position: absolute;
-			max-width: 80%;
-			padding-top: 12px;
+			max-width: 70%;
+			padding-top: 15px;
 			.svg_tl{
 				// display: none;	
 			}
@@ -103,16 +112,32 @@ h1{
 		max-width: 50%;
 		width: 50%;
 		float: left;
-		p{
-			font-family: $body-font;
-			font-size: 1.8rem;
-			font-weight: 100;
-			font-style: italic;
-			text-transform: uppercase;
-			color: #fff;
-			padding: 10px 0;
-			margin: 5px;
-			background: $secondary;
+		.barOne, .barTwo{
+			margin-bottom: 20px;
+			p{
+				font-size: 2rem;
+				font-weight: 100;
+				font-style: italic;
+				text-transform: uppercase;
+				color: #fff;
+				padding: 10px 0;
+				margin: 0px;
+				background: $secondary;
+				display: inline;
+				// -webkit-clip-path: polygon(0% 100%,75% 100%,85% -150%,0px 0px);
+			}
+		}
+		.barOne{
+			p{
+				padding-left: 100px;
+				padding-right: 80px;
+			}
+		}
+		.barTwo{
+			p{
+				padding-left: 90px;
+				padding-right: 50px;
+			}
 		}
 	}
 	.video{
@@ -120,73 +145,182 @@ h1{
 		max-width: 50%;
 		width: 50%;
 		float: left;
+		#vidFrame{
+			width: 460px;
+		}
 	}
 }
 .intro{
-	background: #2ecc71;
+	font-size: 1.8rem;
+	font-weight: 300;
+	color: $grey;
+	margin: 80px auto;
+	p{
+		margin: 0;
+	}
 }
 .how{
-	background: #2c3e50;
+	margin-bottom: 90px;
 	.howItWorks{
 		float: left;
-		max-width: 50%;
-		width: 50%;
-		height: 400px;
-		background: pink;
+		max-width: 60%;
+		width: 60%;
+		margin-right: 5%;
+		ul{
+			margin: 0;
+			padding: 0;
+			li{
+				list-style-type: none;
+				border-bottom: 1px solid rgba(0,0,0,0.1);
+				padding: 25px 0;
+				.illustration{
+					max-width: 33%;
+					width: 33%;
+					margin-right: 10%;
+					float: left;
+				}
+				.description{
+					font-size: 14px;
+					font-weight: 300;
+					color: $grey;
+					max-width: 57%;
+					width: 57%;
+					float: left;
+				}
+			}
+			li:first-child{
+				border-top: 1px solid rgba(0,0,0,0.1);
+			}
+		}
 	}
-	.weAre{
+	.we{
+		color: #fff;
 		float: left;
-		max-width: 50%;
-		width: 50%;
-		height: 400px;
-		background: red;
+		max-width: 35%;
+		width: 35%;
+		h2{
+			color: #fff;
+			margin: 0;
+			margin-bottom: 8px;
+			letter-spacing: 7.5px;
+		}
+		p{
+			font-size: 1.3rem;
+			font-weight: 100;
+			letter-spacing: 0.6px;
+			margin: 0;
+		}
+		.weAreIntro{
+			padding-bottom: 5px;
+		}
+		.weAre{
+			padding-top: 20px;
+			background: $primary;
+			h2,p{
+				padding: 0 20px;
+			}
+			ul{
+				margin: 0;
+				padding: 0;
+				li{
+					list-style-type: none;
+					padding: 10px 0;
+					.description{
+						float: left;
+						width: 70%;
+						text-transform: uppercase;
+						font-weight: 100;
+						p{
+							letter-spacing: 1px;
+						}
+					}
+					.illustration{
+						float: right;
+						width: 20%;
+					}
+				}
+				li:nth-child(2n+1){
+					background: #5cc1e5;
+				}
+			}
+		}
+		.weAreNot{
+			padding: 20px;
+			background: #889ea6;
+			.weAreNotList{
+				width: 90%;
+				float: left;
+				color: #fff;
+			}
+			.not{
+				padding-top: 2px;
+				width: 7%;
+				float: right;
+			}
+			ul{
+				margin: 0;
+				padding: 0;
+				li{
+					list-style-type: none;
+					padding: 8px 0;
+					border-bottom: 1px solid #ccc;
+				}
+				li:last-child{
+					border-bottom: none;
+				}
+				li:first-child{
+					text-transform: uppercase;
+				}
+			}
+		}
 	}
 }
 .about{
-	background: #f1c40f;
+	margin-bottom: 90px;
 	.prLogo{
 		float: left;
-		max-width: 50%;
-		width: 50%;
-		height: 200px;
-		background: #ccc;
+		max-width: 20%;
+		width: 20%;
+		img{
+			width: 100%;
+			height: auto;
+			margin-left: -12px;
+		}
 	}
 	.prCopy{
+		font-size: 1.5rem;
+		color: $grey;
+		font-weight: 300;
 		float: left;
-		max-width: 50%;
-		width: 50%;
-		height: 200px;
-		background: #333;
+		padding-top: 20px;
+		margin-left: 5%;
+		max-width: 75%;
+		width: 75%;
 	}
 }
 .partners{
-	background: #e74c3c;
+	margin-bottom: 90px;
 	ul{
 		margin: 0;
 		padding: 0;
 		li{
 			float: left;
 			width: 25%;
-			background: #444;
-			color: #fff;
-			border-right: 1px solid #000;
+			// color: #fff;
+			// border-right: 1px solid #000;
 		}
 	}
 }
 .contact{
-	background: #2ecc71;
-	.cred{
+	margin-bottom: 90px;
+		.cred{
 		float: left;
 		max-width: 50%;
 		width: 50%;
-		height: 200px;
-		background: #000;
 	}
 	.form{
 		float: left;
 		max-width: 50%;
 		width: 50%;
-		height: 200px;
-		background: #333;
 	}
 }
