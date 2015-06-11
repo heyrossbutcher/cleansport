@@ -1,0 +1,20 @@
+// _legal.scss
+.legal{
+	max-width: 920px;
+	width: 100%;
+	margin: 0 auto;
+	padding-top: 120px;
+	font-size: 1.3rem;
+	a:link{
+		color: $primary;
+		&:hover{
+			color: $secondary;
+		}
+	}
+	strong{
+		font-size: 1.5rem;
+	}
+	li{
+		line-height: 1.5;
+	}
+}

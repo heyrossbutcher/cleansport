@@ -24,8 +24,9 @@ nav{
 	width: 100%;	
 	height: 95px;
 	margin: 0 auto;
-	background: rgba(255,255,255,0.85);
+	background: rgba(255,255,255,0.90);
 	position: fixed;
+	z-index: 1000;
 	.logo{
 		float: left;
 		max-width: 50%;
@@ -40,7 +41,7 @@ nav{
 		}
 
 	}
-	.menu-main-nav-container{
+	.menu-main-nav-container, .menu-inner-nav-container{
 		float: right;
 		max-width: 50%;
 		width: 50%;
@@ -55,7 +56,6 @@ nav{
 				padding: 0;
 				padding-right: 22px;
 				a{
-					font-family: $body-font;
 					font-size: 1.4rem;
 					font-weight: 300;
 					font-style: italic;
@@ -75,9 +75,11 @@ nav{
 			}
 			li::after{
 				content: "//";
+				// letter-spacing: -3px;
 				padding-left: 22px;
 				margin-top: -2px;
-				font-size: 1.7rem;
+				font-size: 1.2rem;
+				// font-weight: 100;
 				color: $primary;
 			}
 			li:last-child::after{
@@ -109,8 +111,9 @@ h1{
 	height: 370px;
 	.tagline{
 		padding-top: 170px;
-		max-width: 50%;
-		width: 50%;
+		max-width: 40%;
+		width: 40%;
+		margin-right: 10%;
 		float: left;
 		.barOne, .barTwo{
 			margin-bottom: 20px;
@@ -122,18 +125,22 @@ h1{
 				color: #fff;
 				padding: 10px 0;
 				margin: 0px;
-				background: $secondary;
-				display: inline;
 				// -webkit-clip-path: polygon(0% 100%,75% 100%,85% -150%,0px 0px);
 			}
 		}
 		.barOne{
+				mask: url(#barOneMask);
+				background: $secondary;
+				// display: inline;
 			p{
 				padding-left: 100px;
 				padding-right: 80px;
 			}
 		}
 		.barTwo{
+				mask: url(#barTwoMask);
+				background: $secondary;
+				// display: inline;
 			p{
 				padding-left: 90px;
 				padding-right: 50px;
@@ -145,6 +152,7 @@ h1{
 		max-width: 50%;
 		width: 50%;
 		float: left;
+		cursor: pointer;
 		#vidFrame{
 			width: 460px;
 		}
@@ -173,6 +181,7 @@ h1{
 				list-style-type: none;
 				border-bottom: 1px solid rgba(0,0,0,0.1);
 				padding: 25px 0;
+				position: relative;
 				.illustration{
 					max-width: 33%;
 					width: 33%;
@@ -185,12 +194,25 @@ h1{
 					color: $grey;
 					max-width: 57%;
 					width: 57%;
-					float: left;
+					// float: left;
+					position: absolute;
+					top: 50%;
+					left: 43%;
+					transform: translateY(-50%);
+
+					p{
+						margin: 0;
+						
+					}
 				}
 			}
 			li:first-child{
 				border-top: 1px solid rgba(0,0,0,0.1);
 			}
+			li:last-child{
+				border-bottom: none;
+			}
+				
 		}
 	}
 	.we{
@@ -210,24 +232,26 @@ h1{
 			letter-spacing: 0.6px;
 			margin: 0;
 		}
-		.weAreIntro{
-			padding-bottom: 5px;
-		}
+		
 		.weAre{
 			padding-top: 20px;
 			background: $primary;
 			h2,p{
-				padding: 0 20px;
+				padding: 0 25px;
 			}
 			ul{
 				margin: 0;
 				padding: 0;
 				li{
 					list-style-type: none;
-					padding: 10px 0;
+					padding: 15px 0;
+					position: relative;
 					.description{
+						position: absolute;
+						top: 50%;
+						transform: translateY(-50%);
 						float: left;
-						width: 70%;
+						width: 65%;
 						text-transform: uppercase;
 						font-weight: 100;
 						p{
@@ -236,7 +260,8 @@ h1{
 					}
 					.illustration{
 						float: right;
-						width: 20%;
+						width: 25%;
+						padding-right: 25px;
 					}
 				}
 				li:nth-child(2n+1){
@@ -244,8 +269,12 @@ h1{
 				}
 			}
 		}
+		p.weAreIntro{
+			padding-bottom: 10px;
+		}
 		.weAreNot{
-			padding: 20px;
+			padding: 25px;
+			padding-bottom: 10px;
 			background: #889ea6;
 			.weAreNotList{
 				width: 90%;
@@ -256,6 +285,9 @@ h1{
 				padding-top: 2px;
 				width: 7%;
 				float: right;
+				img{
+					opacity: 0.7;
+				}
 			}
 			ul{
 				margin: 0;
@@ -270,6 +302,9 @@ h1{
 				}
 				li:first-child{
 					text-transform: uppercase;
+					.not{
+						display: none;
+					}
 				}
 			}
 		}
@@ -300,27 +335,155 @@ h1{
 }
 .partners{
 	margin-bottom: 90px;
-	ul{
-		margin: 0;
-		padding: 0;
-		li{
-			float: left;
-			width: 25%;
-			// color: #fff;
-			// border-right: 1px solid #000;
-		}
+	h2{
+		margin-bottom: 40px;
+	}
+	.partCol{
+		float: left;
+		width: 25%;
+		padding: 0 5%;
+		border-right: 1px solid rgba(0,0,0,0.1);
+	}
+	.partCol:first-of-type{
+		padding-left: 0;
+	}
+	.partCol:last-of-type{
+		padding-right: 0;
+		border-right: none;
 	}
 }
 .contact{
 	margin-bottom: 90px;
-		.cred{
-		float: left;
-		max-width: 50%;
-		width: 50%;
+	p{
+		margin-top: 0;
 	}
+		.cred{
+			font-size: 1.4rem;
+			font-weight: 300;
+			float: left;
+			max-width: 30%;
+			width: 30%;
+			margin-right: 10%;
+		}
 	.form{
 		float: left;
-		max-width: 50%;
-		width: 50%;
+		max-width: 60%;
+		width: 60%;
+		p{
+			margin: 0;
+			padding: 0;
+		}
 	}
 }
+.wpcf7-form{
+    width: 100%;
+input{
+  font-size: 1.2rem;
+  font-weight: 300;
+  border: 1px solid rgba(0,0,0,0.1); 
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 8px;
+}
+    .your_name, .your_email, .your_subject{
+      font-weight: 300;
+      width: 100%;
+      margin-bottom: 10px;
+      padding:5px;
+      width:100%;
+    }
+    .your-message{
+      font-weight: 300;
+      width: 100%;
+      height: 120px;
+      margin-bottom: 20px;
+    }
+    .form_send{
+      padding: 4px 25px;
+      font-weight: 300;
+      &:hover{
+	    }
+    }
+    input[type=submit] { 
+      width: 100px;
+      font-weight: 300;
+      padding: 4px 10px 6px 10px;
+      margin-top: 15px;
+      background: $primary;
+      color: white;
+      &:hover{
+      	background: $secondary;
+      }
+    }
+  }
+  .wpcf7-textarea{
+  	width: 100%;
+  	font-size: 1.2rem;
+  	font-weight: 300;
+  	border: 1px solid rgba(0,0,0,0.1); 
+  	padding: 10px;
+  }
+  .wpcf7-mail-sent-ok, .wpcf7-validation-errors{
+  	font-size: 1.5rem;
+    border: 0;
+    margin: 0;
+    margin-top: 25px;
+    padding: 10px 15px;
+    display: inline-block;
+  }
+ .wpcf7-response-output{
+ 	margin: 0;
+ }
+ footer{
+ 	margin: 25px auto;
+ 	.container{
+ 		text-align: center;
+ 		.footContain{
+ 			width: 500px;
+ 			margin: 0 auto;
+		 	.footNav{
+		 		float: left;
+		 		display: inline;
+			 	ul{
+			 		margin: 0;
+			 		padding: 0;
+			 		li{
+			 			float: left;
+			 			display: inline;
+			 			margin: 0;
+			 			padding: 0;
+			 			// padding-right: 22px;
+						a{
+							font-size: 1.2rem;
+							font-weight: 300;
+							font-style: italic;
+							color: $primary;
+							background: none;
+							padding: 0;
+							&:hover{
+								color: $secondary;
+							}
+						}
+					 	a::after{
+							content: "//";
+							letter-spacing: -3px;
+							padding: 0 22px;
+							margin-top: -2px;
+							font-size: 1.7rem;
+							font-weight: 100;
+							color: $primary;
+
+						}
+			 		}
+			 	}
+			 }
+			 .copyright{
+			 	float: right;
+			 	font-size: 1.2rem;
+			 	font-weight: 100;
+			 	display: inline;
+			 	padding-top: 5px;
+			 }
+ 		}
+	}
+ }

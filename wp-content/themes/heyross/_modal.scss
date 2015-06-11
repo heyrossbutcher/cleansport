@@ -1,0 +1,57 @@
+// _modal.scss
+.overlay{
+	position: fixed;
+	background: rgba(255,255,255,0.85);
+	width: 100%;
+	height: 100%;
+	z-index: 2000;
+		.frame{
+			width: 720px;
+			height: 480px;
+			margin: 0 auto;
+			margin-top: 50px;
+			padding-top: 40px;
+			position: relative;
+			.innerframe{
+				width: 640px;
+				height: 360px;
+				margin: 0 auto;
+				background: #000;
+				box-shadow: 0 0 10px 2px rgba(0,0,0,0.5);
+			}
+			.close{
+				position: absolute;
+				right:30px;
+				top: 30px;
+				width: 30px;
+				height: 30px;
+				color: #fff;
+				background: #000;
+				border-radius: 50%;
+				text-align: center;
+				border: 2px solid rgba(255,255,255,1);
+				box-shadow: 0 0 2px 2px rgba(0,0,0,0.3);
+				cursor: pointer; cursor: hand;
+				transition: all 0.5s;
+				&:hover{
+					color: #000;
+					background: #fff;
+				}
+				p{
+					font-size:1.4rem;
+					margin: 0;
+					padding: 0;
+					padding-top: 2px;
+				}
+			}
+		}
+}
+.video .vidCircle, .video .vidText, .video .vidBg{
+	transition: all 0.5s;
+}
+.video:hover .vidCircle, .video:hover .vidText{
+	fill: $secondary;
+}
+.video:hover .vidBg{
+	opacity: 1;
+}

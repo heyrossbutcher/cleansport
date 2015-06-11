@@ -24,6 +24,7 @@ function theme_setup() {
   * adding additional menus to the array. */
 	register_nav_menus( array(
 		'primary' => 'Primary Navigation',
+		'secondary' => 'Secondary Navigation',
 		'footer' => 'Footer menu'
 	) );
 
@@ -268,3 +269,9 @@ function get_post_parent($post) {
 		return $post->ID;
 	}
 }
+/*Allows SVGs to be uploaded*/
+function cc_mime_types($mimes) {
+  $mimes['svg'] = 'image/svg+xml';
+  return $mimes;
+}
+add_filter('upload_mimes', 'cc_mime_types');

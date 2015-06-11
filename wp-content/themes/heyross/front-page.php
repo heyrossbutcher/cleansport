@@ -23,7 +23,7 @@ get_header();  ?>
 		<?php //End of Thanks ?>
 	</section>
 	<!-- // -->
-	<section class="how clearfix">
+	<section class="how clearfix" id="how">
 			
 		<div class="howItWorks clearfix">
 					<?php $latestPosts = new wp_query(array(
@@ -63,9 +63,10 @@ get_header();  ?>
 									<p><?php the_sub_field('list_name');  //Get the Client Name ?></p>
 								</div>
 								<div class="illustration">
-									<?php $num = get_sub_field('list_img');  //Get the Client Name ?>
-								    <img src="<?php bloginfo( 'template_url' ); ?>/img/weAre_<?php echo $num ?>.svg" alt="">
+										<?php $image = get_sub_field('list_img'); ?>
+									    <img src="<?php echo $image['sizes']['medium'] ?>">
 								</div>
+									<?php //pre_r($num) ?>
 						    </li>
 						    <?php endwhile; ?>
 						</ul>
@@ -86,10 +87,8 @@ get_header();  ?>
 									<p><?php the_sub_field('list_item');  //Get the Client Name ?></p>
 								</div>
 								<div class="not">
-								<?php //$notIcon = the_sub_field('list_icon'); ?>
-								<?php if ( !$notIcon == 1 ) : ?>
-									<img src="<?php bloginfo( 'template_url' ); ?>/img/not.svg" alt="">
-								<?php endif ?>
+										<?php $image = get_sub_field('icon_item'); ?>
+									    <img src="<?php echo $image['sizes']['medium'] ?>">
 								</div>
 						    </li>
 						    <?php endwhile; ?>
@@ -100,7 +99,7 @@ get_header();  ?>
 		</div>
 	</section>
 	<!-- // -->
-	<section class="about clearfix">
+	<section class="about clearfix" id="about">
 	  <?php $latestPosts = new wp_query(array(
 	    'post_type' => 'about',//we only want portfolio pieces
 	    'posts_per_page' => 1
@@ -119,26 +118,24 @@ get_header();  ?>
 	<?php //End of grabbing Contact pieces ?>
 	</section>
 	<!-- // -->
-	<section class="partners clearfix">
+	<section class="partners clearfix" id="partners">
 		<?php $latestPosts = new wp_query(array(
 		  'post_type' => 'partners',//we only want portfolio pieces
 		  'posts_per_page' => -1
 		)) ?> 
 		<?php if($latestPosts->have_posts()) while($latestPosts->have_posts()) : $latestPosts->the_post() ?>
 			<h2><?php the_title(); ?></h2>
-			<ul>
 				<?php while( has_sub_field('partner_logos') ): ?>
-				<li>
+				<div class="partCol">
 					<?php $image = get_sub_field('partner_logo_column'); ?>
 					 <!-- <pre><?php print_r($image);?></pre> -->
 				    <img src="<?php echo $image['sizes']['medium'] ?>">
-			    </li>
+			    </div>
 			    <?php endwhile; ?>
-			</ul>
 	    <?php endwhile; ?>
 	</section>
 	<!-- // -->
-	<section class="contact clearfix">
+	<section class="contact clearfix" id="contact">
 		  <?php $latestPosts = new wp_query(array(
 		    'post_type' => 'contact',//we only want portfolio pieces
 		    'posts_per_page' => 1

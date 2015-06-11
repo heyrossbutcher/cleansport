@@ -1,8 +1,13 @@
 <footer>
-  <div class="container">
-    <?php 
-    	wp_nav_menu(array('theme_location'  => 'footer'));
-     ?>
+  <div class="container clearfix">
+	  <div class="footContain">
+	    <div class="footNav">
+		    <?php wp_nav_menu(array('theme_location'  => 'footer')); ?>
+	    </div>
+	    <div class="copyright">
+	    	<?php echo date('Y'); ?> The Stewart Group Ltd. All Rights Reserved
+	    </div>
+    </div>
   </div>
 </footer>
 
