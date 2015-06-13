@@ -128,7 +128,6 @@ get_header();  ?>
 				<?php while( has_sub_field('partner_logos') ): ?>
 				<div class="partCol">
 					<?php $image = get_sub_field('partner_logo_column'); ?>
-					 <!-- <pre><?php print_r($image);?></pre> -->
 				    <img src="<?php echo $image['sizes']['medium'] ?>">
 			    </div>
 			    <?php endwhile; ?>

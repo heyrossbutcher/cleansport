@@ -1,7 +1,7 @@
 <footer>
   <div class="container clearfix">
-	  <div class="footContain">
-	    <div class="footNav">
+	  <div class="footContain clearfix">
+	    <div class="footNav clearfix">
 		    <?php wp_nav_menu(array('theme_location'  => 'footer')); ?>
 	    </div>
 	    <div class="copyright">

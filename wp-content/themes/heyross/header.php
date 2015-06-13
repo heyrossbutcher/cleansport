@@ -10,8 +10,6 @@
   <?php // Load our CSS ?>
   <link rel="stylesheet" type="text/css" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
   <link href='http://fonts.googleapis.com/css?family=Roboto:100,300,300italic,400' rel='stylesheet' type='text/css'>
-  <link href='http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
   <?php wp_head(); ?>
 </head>
@@ -121,13 +119,32 @@
 
               </a>
           </div><!-- End of logo -->
-            <?php if( is_front_page() ) : ?>
-              <?php wp_nav_menu(array('theme_location'  => 'primary')); ?><!-- Load in navigation -->
-            <?php else : ?>
-              <?php wp_nav_menu(array('theme_location'  => 'secondary')); ?><!-- Load in navigation -->
-            <?php endif ?>
+
+          <div class="mainNav clearfix">
+              <?php if( is_front_page() ) : ?>
+                <?php wp_nav_menu(array('theme_location'  => 'primary')); ?><!-- Load in navigation -->
+              <?php else : ?>
+                <?php wp_nav_menu(array('theme_location'  => 'secondary')); ?><!-- Load in navigation -->
+              <?php endif ?>
+          </div>
+
+
+        <div class="hamMenu">
+         &#9776;
         </div>
+
+        <!-- <div class="mobileNav clearfix">
+          <?php //if( is_front_page() ) : ?>
+            <?php //wp_nav_menu(array('theme_location'  => 'primary')); ?>
+          <?php //else : ?>
+            <?php //wp_nav_menu(array('theme_location'  => 'secondary')); ?>
+          <?php //endif ?>
+        </div> -->
+
+        </div><!-- End of inner wrapper -->
       </nav><!-- End of NAV -->
+        
+
 
       <?php if( is_front_page() ) : ?>
       <div class="wrapper" style="background-image: url(<?php bloginfo( 'template_url' ); ?>/img/hero.jpg)">

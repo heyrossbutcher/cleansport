@@ -1,0 +1,464 @@
+// _mq.scss
+@media screen 
+  and (max-width: 950px) {
+	section{
+		padding: 0 30px;
+	}
+	.hero .tagline {
+
+		// margin-right: 5%;
+	}
+	h2 {
+	  font-size: 2.2rem;
+	  letter-spacing: 4px;
+	}
+	nav .logo #logo_h {
+	  padding-top: 20px;
+	  padding-left: 20px;
+	}
+	footer{
+		.container{
+			max-width: 100%;
+			width: 100%;
+		}
+	}
+}
+@media screen 
+  and (max-width: 890px) {
+	h2 {
+	  // font-size: 2.2rem;
+	}
+	.svg_tl{
+		display: none;
+	}
+	.hero .tagline {
+		margin-left: -35px;
+	}
+	.hero .video{
+		padding-top: 140px;
+		#vidFrame{
+			width: 100%;
+		}
+	}
+	.contact .cred {
+	  max-width: 35%;
+	  width: 35%;
+	  margin-right: 5%;
+	}
+	.intro{
+		margin: 50px auto;
+	}
+	nav .logo{
+		max-width: 40%;
+		width: 40%;
+	}
+	nav .mainNav{
+		padding-top: 28px;
+	}
+	nav .menu-main-nav-container, .menu-inner-nav-container{
+		max-width: 60%;
+		width: 60%;
+	}
+	nav .logo #logo_h {
+		max-width: 80%;
+		width: 80%;
+		padding: 22px 0 0 20px;
+	}
+	nav .menu-main-nav-container ul li, nav .menu-inner-nav-container {
+
+			ul li {
+			padding-right: 12px;
+		}
+	}
+
+	.how .we .weAreNot {
+	  padding: 20px;
+	}
+	.how .we .weAre{
+		padding-top: 20px;
+	}
+	 .how .we .weAre p {
+	  padding: 0 0 20px 20px;
+	}
+	h2{
+		padding: 0;
+	}
+	.how .we .weAre h2{
+		padding: 0 20px;
+	}
+	.how .we p {
+	  font-size: 1.3rem;
+	 }
+	 .about .prCopy {
+	   padding-top: 0;
+	 }
+	 .how .we .weAre ul li .description{
+	 	width: 70%;
+	 	padding: 15px 0 0 0;
+	 }
+	 .how, .about, .partners, .contact {
+	   margin-bottom: 70px;
+	 }
+	 .intro {
+	   font-size: 1.5rem;
+	 }
+}
+@media screen 
+  and (max-width: 785px) {
+	.mainNav{
+		display: none;
+	}
+	nav .hamMenu{
+		display: block;
+	}
+}
+@media screen 
+  and (max-width: 768px) {
+  	section{
+  		padding: 0 50px;
+  	}
+  	nav .hamMenu{
+  		padding-top: 15px;
+  	}
+  	nav .logo #logo_h {
+  	  max-width: 90%;
+  	  width: 90%;
+  	}
+  	.hero {
+  		height: 300px;
+		.tagline {
+	  	  padding-top: 130px;
+	  	  max-width: 50%;
+	  	  width: 50%;
+	  	  margin-right: 5%;
+	  	  margin-left: -50px;
+	  	}
+	  	.video{
+	  		padding-top: 100px;
+	  	}
+
+  	}
+	.how .howItWorks {
+	  max-width: 100%;
+	  width: 100%;
+	  margin-right: 0;
+	}
+	.how .howItWorks {
+		margin-bottom: 40px;
+			ul li .description p {
+			font-size: 1.5rem;
+			margin: 0;
+		}
+	}
+	.how .we {
+	  max-width: 100%;
+	  width: 100%;
+	  background: #5cc1e5;
+	}
+	.how .we .weAre {
+	  float: left;
+	  max-width: 50%;
+	  width: 50%;
+	}
+	.how .we .weAreNot {
+	  float: left;
+	  max-width: 50%;
+	  width: 50%;
+	}
+	.how .we h2 {
+	  font-size: 2.5rem;
+	}
+	.contact .cred {
+	  font-size: 1.2rem;
+	}
+	
+	.how .we .weAre ul li {
+	  padding: 20px 0;
+	}
+	.how .we .weAre ul li .illustration {
+	  width: 27%;
+	}
+	.how .we .weAre ul li .description {
+	  width: 63%;
+	}
+	.partners .partCol{
+		padding: 0 5% 0 0;
+	}
+}
+@media screen 
+  and (max-width: 620px) {
+	.about .prLogo {
+		display: none;
+	}
+	.about .prCopy {
+	  	max-width: 100%;
+		width: 100%;
+		margin-left: 0;
+		p{
+			margin: 0;
+		}
+	}
+	.hero {
+	  height: 310px;
+	}
+	nav .logo #logo_h {
+	  // padding-top: 35px;
+	}
+	.hero .tagline {
+	  padding-top: 140px;
+	}
+	.hero .video {
+	  padding-top: 120px;
+	}
+
+	.how .we .weAre {
+		max-width: 100%;
+		width: 100%;
+		p{
+			font-size: 1.5rem;
+		}
+	}
+	.how .we .weAreNot {
+		max-width: 100%;
+		width: 100%;
+		padding: 20px 35px;
+
+	}
+	.how .we .weAre ul li .illustration {
+	  width: 15%;
+	}
+	.how .we .weAre ul li {
+	  padding: 10px 0;
+	}
+	section {
+	  padding: 0 30px;
+	}
+	.hero .tagline {
+	  display: none;
+	}
+	nav .logo {
+	  max-width: 60%;
+	  width: 60%;
+	}
+	.how .we .weAre p {
+	  padding: 0 0 20px 30px;
+	}
+	.how .we .weAre ul li .illustration {
+	  padding-right: 30px;
+	  width: 20%;
+	}
+	.how .we .weAre ul li .description {
+	  width: 55%;
+	  p{
+		  font-size: 1.7rem;
+		}
+	}
+	.how .we .weAre h2 {
+	  padding: 0 30px;
+	}
+	.hero .video {
+	  max-width: 100%;
+	  width: 100%;
+	  padding: 0 90px;
+	  padding-top: 120px;
+	}
+	.contact .cred {
+	  max-width: 100%;
+	  width: 100%;
+	  margin-bottom: 20px;
+	}
+	.contact .form {
+	  max-width: 100%;
+	  width: 100%;
+	}
+	.how .howItWorks ul li .illustration {
+	  max-width: 100%;
+	  width: 100%;
+	  margin-right: 0;
+	  margin-bottom: 10px;
+	  img{
+		  height: 100px;
+		}
+
+	}
+	.how .howItWorks ul li .description {
+	  font-size: 14px;
+	  font-weight: 300;
+	  color: #889ea6;
+	  max-width: 100%;
+	  width: 100%;
+	  position: static;
+	  transform: none;
+	  top: 0;
+    left: 0;
+	    p{
+	    	font-size: 1.3rem;
+	    }
+	}
+	footer{
+		max-width: 380px;
+		margin-left: 15px;
+	}
+	footer .container .footContain .footNav ul li a, footer .container .footContain .copyright {
+		font-size: 1rem;
+	}
+	footer .container .footContain .footNav ul li a::after {
+		padding: 0 10px;
+	}
+	footer .container .footContain  {
+	  width: 390px;
+	}
+}
+@media screen 
+  and (max-width: 520px) {
+	.hero {
+	  height: 320px;
+	  .video{
+	  	padding: 0 50px;
+	  	padding-top: 120px;
+	  }
+	}
+	.intro {
+	  margin: 35px auto;
+	}
+	.how .howItWorks ul li .illustration img {
+	  height: 85px;
+	}
+	.how .howItWorks ul li {
+	  padding: 15px 10px;
+	}
+	nav {
+		.logo {
+		  max-width: 65%;
+		  width: 65%;
+		  #logo_h {
+		  }
+		}
+	}
+	.how .we .weAre ul li .description p {
+	  font-size: 1.5rem;
+	}
+
+}
+@media screen 
+  and (max-width: 440px) {
+	section{
+		padding: 0 25px;
+	}
+	.intro {
+	  font-size: 1.4rem;
+	}
+	h2 {
+	  font-size: 1.6rem;
+	}
+	.how .we h2 {
+	  font-size: 2rem;
+	}
+	.how .we .weAre ul li .description {
+	  width: 65%;
+	}
+	.hero {
+	  height: 270px;
+	  .video{
+	  	padding: 0 40px;
+	  	padding-top: 110px;
+	  }
+	}
+	footer .container .footContain {
+		 .footNav {
+		 	float: none;
+		 	width: 100%;
+			  display: block;
+			  text-align: center;
+		}
+		.copyright{
+			float: none;
+			width: 100%;
+			display: block;
+			text-align: center;
+		}
+	}
+}
+@media screen 
+  and (max-width: 380px) {
+  	nav {
+  	  .hamMenu{
+  	  	padding: 12px 25px 0 0;
+  	  }
+  	  .logo {
+  	    max-width: 75%;
+  	    width: 75%;
+  	    #logo_h {
+  	      max-width: 80%;
+  	      width: 80%;
+  	      padding-top: 22px;
+  	      padding-left: 20px;
+	  	  }
+	  	}
+  	}
+
+  	section{
+  		padding: 0;
+  	}
+	.hero {
+	  height: 240px;
+	  .video{
+	  	padding: 0 15px;
+	  	padding-top: 90px;
+	  }
+	}
+	.intro {
+	  padding: 0 20px;
+	  margin: 40px auto;
+	}
+	.how .howItWorks ul li {
+	  padding: 15px 20px;
+	}
+
+	.how .howItWorks ul li .illustration img {
+	  height: 80px;
+	}
+	h2 {
+	  font-size: 1.3rem;
+	  padding-left: 15px;
+	}
+	.about .prCopy p {
+	  margin: 15px;
+	}
+	.how .we .weAreNot {
+	  padding: 20px 15px;
+	}
+	.about h2{
+		font-size: 2rem;
+		margin-bottom: 0;
+	}
+	.partners h2, .contact h2{
+		font-size: 2rem;
+		padding-left: 0;
+	}
+	.how .we h2 {
+		padding-left: 0;
+	}
+	.how .we .weAre{
+		h2{
+			padding: 0 0 0 15px;
+		}
+		p{
+		 	font-size: 1.3rem;
+			padding: 0 15px 20px 15px;
+		 }
+	}
+	.how, .about, .partners, .contact {
+	  margin-bottom: 40px;
+	}
+	.contact, .partners{
+		margin-left: 15px;
+		margin-right: 15px;
+	}
+	.how .we .weAre ul li .description p {
+	  font-size: 1.3rem;
+	}
+	footer .container .footContain .copyright {
+		text-align: left;
+	}
+}

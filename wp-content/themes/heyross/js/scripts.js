@@ -7,6 +7,7 @@ app.popup = function(pPopup, pYt){ //pYt optional
 //Smooth Scroller
 app.smoothScroller = function(){
 	$("nav a").smoothScroll({ offset: -150 });
+	$("logo").smoothScroll({ offset: -150 });
 }
 
 $(function(){
